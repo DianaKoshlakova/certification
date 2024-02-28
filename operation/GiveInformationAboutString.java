@@ -1,9 +1,9 @@
 package certification.operation;
 
-import org.example.interfaces.DateValidator;
-import org.example.interfaces.StringToArray;
-import org.example.myexception.BasicException;
-import org.example.myexception.NumberPhoneExseption;
+import certification.interfaces.DateValidator;
+import certification.interfaces.StringToArray;
+import certification.exception.BasicException;
+import certification.exception.NumberPhoneException;
 
 public class GiveInformationAboutString implements StringToArray{
 
@@ -68,7 +68,7 @@ public class GiveInformationAboutString implements StringToArray{
         if ((str.length() == 7 || str.length() == 11) && isRealNumber(str) ) {
             System.out.println("Номер телефона введен верно");
         } else {
-            throw new NumberPhoneExseption();
+            throw new NumberPhoneException();
         }
 
     }

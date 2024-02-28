@@ -1,11 +1,11 @@
 package certification.exception;
 
-public class NumberPhoneExseption extends RuntimeException{
-    public NumberPhoneExseption() {
+public class NumberPhoneException extends RuntimeException{
+    public NumberPhoneException() {
         super("Введен неправильный номер. Пожалуйста введите номер в формате 7 или 11 цифр.");
     }
 
-    public NumberPhoneExseption(String message) {
+    public NumberPhoneException(String message) {
         super(message);
     }
 }
